@@ -1,47 +1,53 @@
-### Installation
+# Sports Day Event Registration Backend
 
-- [Docker](https://docs.docker.com/engine/install/)
-- [Mysqlsh](https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html)
+This is the backend service for the Sports Day Event Registration application. It provides the necessary APIs for user registration, event management, and event registration. Users can create accounts, log in, view events, register for events, and manage their registrations.
 
-### Launch MySQL using Docker
+## Table of Contents
 
-```
-docker run --detach --env MYSQL_ROOT_PASSWORD=dummypassword --env MYSQL_USER=todos-users --env MYSQL_PASSWORD=dummytodos --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:8-oracle
-```
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [API Endpoints](#api-endpoints)
 
-### /pom.xml Modified
+## Features
 
-```
-<!-- Remove H2
-	<dependency>
-		<groupId>com.h2database</groupId>
-		<artifactId>h2</artifactId>
-		<scope>runtime</scope>
-	</dependency> -->
+- Create User: Allows users to create accounts.
+- Login User: Allows users to log in with their user IDs.
+- Get All Events List: Provides a list of all available events.
+- Get All Registered Events List: Lists events for which a user has already registered.
+- Register Event: Registers a user for a specific event.
+- Unregister Event: Unregisters a user from an event.
+- Prevents duplicate event registration by the same user.
+- Event registration conflict checking (events with overlapping times).
+- Secure user authentication.
+- Data storage and retrieval using a relational database.
 
-// Deprecated in SB 3.1.x
-<!--<dependency>
-	<groupId>mysql</groupId>
-	<artifactId>mysql-connector-java</artifactId>
-</dependency> -->
+## Technologies Used
 
-// Use the below Mysql Dependency Starting from SB 3.1.x
-<dependency>
-	<groupId>com.mysql</groupId>
-	<artifactId>mysql-connector-j</artifactId>
-</dependency>
-```
+- Java Spring Boot: For building the backend service.
+- Spring Data JPA: For data access and database operations.
+- Hibernate: Object-relational mapping (ORM) framework.
+- H2 Database: An in-memory database for development and testing.
+- Spring Security: For user authentication and security.
+- RESTful API design.
+- Gradle: Build automation tool.
 
-### /src/main/resources/application.properties Modified
+## Getting Started
 
-```
+To get started with the Sports Day Event Registration Backend, follow these steps:
 
-#comment-h2
-#spring.datasource.url=jdbc:h2:mem:testdb
+### Prerequisites
 
-spring.datasource.url=jdbc:mysql://localhost:3306/todos
-spring.datasource.username=todos-users
-spring.datasource.password=dummytodos
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
-spring.jpa.hibernate.ddl-auto=update
-```
+- Java Development Kit (JDK): [Download JDK](https://adoptium.net/).
+- Gradle Build Tool: [Download Gradle](https://gradle.org/).
+
+### API Endpoints
+
+The following API endpoints are available:
+
+POST /api/users - Create a user.
+POST /api/users/login - Log in a user.
+GET /api/events - Get a list of all events.
+GET /api/events/registered - Get a list of events registered by the user.
+POST /api/events/register - Register a user for an event.
+DELETE /api/events/unregister - Unregister a user from an event.
