@@ -1,0 +1,13 @@
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/basic/BasicAuthenticationSecurityConfiguration.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Controller/RegistrationController.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/RestfulWebServicesApplication.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Repository/EventRegistrationRepository.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Model/EventRegistration.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Service/EventService.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Repository/EventRepository.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Model/EventResponseDTO.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Service/UserService.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Service/EventRegistrationService.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Model/Users.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Repository/UserRepository.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Model/Event.java
