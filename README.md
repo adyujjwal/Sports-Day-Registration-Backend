@@ -1,3 +1,6 @@
+![SpringBoot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+
 # Sports Day Event Registration Backend
 
 This is the backend service for the Sports Day Event Registration application. It provides the necessary APIs for user registration, event management, and event registration. Users can create accounts, log in, view events, register for events, and manage their registrations.
@@ -44,10 +47,11 @@ To get started with the Sports Day Event Registration Backend, follow these step
 ### API Endpoints
 
 The following API endpoints are available:
-
+```
 POST /api/users - Create a user.
 POST /api/users/login - Log in a user.
 GET /api/events - Get a list of all events.
 GET /api/events/registered - Get a list of events registered by the user.
 POST /api/events/register - Register a user for an event.
 DELETE /api/events/unregister - Unregister a user from an event.
+```
