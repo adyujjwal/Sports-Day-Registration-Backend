@@ -11,3 +11,4 @@
 /Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Model/Users.java
 /Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Repository/UserRepository.java
 /Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Model/Event.java
+/Users/I558224/Desktop/Code/Backend/src/main/java/com/sportsday/rest/webservices/restfulwebservices/Exception/SportsdayException.java

@@ -1,5 +1,6 @@
 package com.sportsday.rest.webservices.restfulwebservices.Service;
 
+import com.sportsday.rest.webservices.restfulwebservices.Exception.SportsdayException;
 import com.sportsday.rest.webservices.restfulwebservices.Model.Users;
 import com.sportsday.rest.webservices.restfulwebservices.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +15,16 @@ public class UserService {
     public Users createUser(Users users) {
         Users existingUser = userRepository.findByUsername(users.getUsername());
         if (existingUser != null) {
-            throw new RuntimeException("Username already exists");
+            throw new SportsdayException("Username already exists");
         }
         return userRepository.save(users);
     }
 
     public Users loginUser(String username) {
-        return userRepository.findByUsername(username);
+        Users user = userRepository.findByUsername(username);
+        if (user == null) {
+            throw new SportsdayException("Username not found");
+        }
+        return user;
     }
 }
