@@ -8,7 +8,6 @@ This is the backend service for the Sports Day Event Registration application. I
 ## Table of Contents
 
 - [Features](#features)
-- [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [API Endpoints](#api-endpoints)
 
@@ -24,16 +23,6 @@ This is the backend service for the Sports Day Event Registration application. I
 - Event registration conflict checking (events with overlapping times).
 - Secure user authentication.
 - Data storage and retrieval using a relational database.
-
-## Technologies Used
-
-- Java Spring Boot: For building the backend service.
-- Spring Data JPA: For data access and database operations.
-- Hibernate: Object-relational mapping (ORM) framework.
-- H2 Database: An in-memory database for development and testing.
-- Spring Security: For user authentication and security.
-- RESTful API design.
-- Gradle: Build automation tool.
 
 ## Getting Started
 
